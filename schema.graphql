@@ -1,0 +1,21 @@
+# Query In GraphQL
+type Query {
+  # getBooks Returns All The Books In An Array
+  getAllBooks: [Book]
+  # getBookByTitle Takes An Arg And Returns A Book (If Existing)
+  getBookByTitle(title: String): [Book]
+}
+
+# User Created Type Called Book
+type Book {
+  books_count: String
+  authors: String
+  original_publication_year: Int
+  title: String
+  language_code: String
+  average_rating: Float
+  ratings_count: Int
+  image_url: String
+  small_image_url: String
+  _id: String
+}
